@@ -1,4 +1,71 @@
+/* Colours */
+:root {
+  --1: #264653;
+  --2: #2A9D8F;
+  --3: #E9C46A;
+  --4: #F4A261;
+  --5: #E76F51;
+}
+
+
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: Poppins, sans-serif;
+}
 
 #title {
-  text-align: center;
+  color: var(--3);
+  padding: 0.1em 1em;
+  flex-grow: 2;
+}
+
+#navbar {
+  display: flex;
+  width: 100%;
+  background-color: var(--1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: var(--3);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding-right: 0.4em;
+}
+
+nav ul:last-of-type {
+  padding-right: 0;
+} 
+
+nav ul li {
+  padding: 1rem;
+  border-right: 2px solid var(--3);
+  border-left: 2px solid var(--3);
+
+}
+
+nav ul li:first-of-type {
+  border-right: none;
+}
+
+nav ul li:last-of-type {
+  border: none;
 }
