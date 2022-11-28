@@ -92,6 +92,6 @@ nav ul li:last-of-type {
 }
 
 #hyperskill-img {
-  width: calc(16/9 * 200)px;
+  width: 350px;
   height: 200px;
 }
