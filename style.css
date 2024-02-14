@@ -92,6 +92,34 @@ nav ul li:last-of-type {
 }
 
 #hyperskill-img {
-  width: 350px;
+
   height: 200px;
+  border-radius: 30px;
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.project-card {
+  width: 400px;
+  height: 550px;
+  background: var(--2);
+  border-radius: 30px;
+  transition-duration: 300ms;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-out;
+  transform: rotate3d(0,0,0,0);
+}
+
+.project-card:hover {
+  transition-duration: 150ms;
+  box-shadow: 0 5px 20px 5px #00000044;
+}
+
+.project-card > p {
+  margin: 2rem;
+  wrap-option: wrap;
+  text-align: center;
 }
