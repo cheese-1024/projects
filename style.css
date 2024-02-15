@@ -99,6 +99,7 @@ nav ul li:last-of-type {
 #email a {
   height: 24px;
   width: 24px;
+  color: var(--3);
 }
 
 #email span {
