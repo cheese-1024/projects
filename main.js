@@ -1,4 +1,6 @@
+console.log("Hello World");
 const $card = document.querySelector('.project-card');
+
 let bounds;
 
 function rotateToMouse(e) {

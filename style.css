@@ -18,6 +18,17 @@
 
 a {
   text-decoration: none;
+  color: var(--3)
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--3)
+}
+
+a:active {
+  text-decoration: none;
+  color: var(--3)
 }
 
 html {
@@ -82,7 +93,16 @@ nav ul li:last-of-type {
 #email {
   text-align: center;
   color: #E9C46A;
-  padding-top: 20px;
+  height: 100%;
+}
+
+#email a {
+  height: 24px;
+  width: 24px;
+}
+
+#email span {
+  margin-top: 36px;
 }
 
 #projects {
@@ -99,13 +119,13 @@ nav ul li:last-of-type {
   margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 90%;
 }
 
 .project-card {
   width: 400px;
-  height: 550px;
-  background: var(--2);
+  height: 533px;
+  background: var(--1);
   border-radius: 30px;
   transition-duration: 300ms;
   transition-property: transform, box-shadow;
@@ -118,8 +138,20 @@ nav ul li:last-of-type {
   box-shadow: 0 5px 20px 5px #00000044;
 }
 
-.project-card > p {
+.project-card > a > p {
+  display: block;
   margin: 2rem;
   wrap-option: wrap;
   text-align: center;
+  font-size: 14pt;
+}
+
+.project-card .glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
 }
